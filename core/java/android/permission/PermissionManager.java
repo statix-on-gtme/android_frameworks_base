@@ -157,6 +157,7 @@ public final class PermissionManager {
     private static final String FUSED_LOCATION_PKG = "com.android.location.fused";
     private static final String PHONE_SERVICES_PKG = "com.android.phone";
     private static final String BLUETOOTH_PKG = "com.android.bluetooth";
+    private static final String CNE_PKG = "com.qualcomm.qti.cne";
 
     /**
      * Refuse to install package if groups of permissions are bad
@@ -1172,6 +1173,7 @@ public final class PermissionManager {
         pkgNames.add(FUSED_LOCATION_PKG);
         pkgNames.add(PHONE_SERVICES_PKG);
         pkgNames.add(BLUETOOTH_PKG);
+        pkgNames.add(CNE_PKG);
         for (int i = 0; i < INDICATOR_EXEMPTED_PACKAGES.length; i++) {
             String exemptedPackage = INDICATOR_EXEMPTED_PACKAGES[i];
             if (exemptedPackage != null) {
